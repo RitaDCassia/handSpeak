@@ -1,0 +1,25 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#000000" /> <!-- Cor de fundo do layout -->
+    <corners android:radius="8dp" /> <!-- Raio dos cantos do layout -->
+    <padding
+        android:left="16dp"
+        android:top="8dp"
+        android:right="16dp"
+        android:bottom="8dp" /> <!-- Espaçamento interno do layout -->
+
+    <!-- Gradiente de cores para o efeito neon (de baixo para cima) -->
+    <gradient
+        android:centerColor="@color/roxo_background"
+        android:endColor="@color/roxo_background"
+        android:startColor="@color/cor_terceira_roxo_escuro"
+        android:type="linear"
+        android:angle="90" />
+
+    <!-- Adiciona o efeito de resplandecer nas bordas -->
+    <item>
+        <shape>
+            <solid android:color="@color/cor_secundaria_roxo_medio_claro" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+</shape>

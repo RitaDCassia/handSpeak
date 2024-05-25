@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="toggleButton">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/default_option_border_bg</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="BottomSheetSpinnerItemStyle" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:textSize">@dimen/bottom_sheet_text_size</item>
+    </style>
+
+    <style name="AppThemeProgressStyle">
+        <item name="colorAccent">@color/roxo_background</item>
+    </style>
+</resources>

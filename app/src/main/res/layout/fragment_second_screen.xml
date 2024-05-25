@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor_clara_branca"
+    tools:context=".screens.FristScreen">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/view_pager_background"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <ImageView
+        android:id="@+id/aghatrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aghatrix_aprend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/roxo_background"
+        android:text="Funcionalidades que se encaixam direitinho com você!"
+        app:layout_constraintTop_toBottomOf="@+id/aghatrix"
+        app:layout_constraintEnd_toEndOf="@id/aghatrix"
+        app:layout_constraintStart_toStartOf="@id/aghatrix" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/roxo_background"
+        android:text="No HandSpeak você encontra algumas atividades interativas como nossa tela de 'Praticar',
+onde eu e você vamos interagir e aprender muito sobre a Libras. Ou se preferir, você pode ir direto para a seção de 'Quiz'
+onde você poderá medir seus conhecimentos."
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvNext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/cor_clara_branca"
+        android:background="@drawable/neon_buttom"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

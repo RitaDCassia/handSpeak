@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor_clara_branca"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="90dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/view_pager_background"
+                app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:src="@drawable/logo_hand_speak"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:constraint_referenced_ids="cardPraticar, cardQuiz, cardVideos, cardContato"
+                app:flow_horizontalGap="@dimen/_3sdp"
+                app:flow_maxElementsWrap="2"
+                app:flow_verticalGap="@dimen/_3sdp"
+                app:flow_wrapMode="aligned"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/cardPraticar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/roxo_background"
+                app:neumorph_shadowColorDark="@color/cardview_dark_background"
+                app:neumorph_shadowColorLight="@color/cardview_light_background"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/roxo_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/aghatrix_praticar" />
+
+                    <TextView
+                        android:id="@+id/homeFragment1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="Praticar"
+                        android:textColor="@color/cor_clara_branca"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <!-- copiado do card1-->
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/cardQuiz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/roxo_background"
+                app:neumorph_shadowColorDark="@color/cardview_dark_background"
+                app:neumorph_shadowColorLight="@color/cardview_light_background"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/roxo_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/aghatrix_quiz" />
+
+
+                    <TextView
+                        android:id="@+id/homeFragment2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="Quiz"
+                        android:textColor="@color/cor_clara_branca"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <!-- cardViwe copiada so 2-->
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/cardVideos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/roxo_background"
+                app:neumorph_backgroundColor="@color/roxo_background"
+                app:neumorph_shadowColorDark="@color/cardview_dark_background"
+                app:neumorph_shadowColorLight="@color/cardview_light_background"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/aghatrix_videos" />
+
+
+                    <TextView
+                        android:id="@+id/homeFragment3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="Videos"
+                        android:textColor="@color/cor_clara_branca"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <!-- card copiado card3-->
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/cardContato"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/roxo_background"
+                app:neumorph_shadowColorDark="@color/cardview_dark_background"
+                app:neumorph_shadowColorLight="@color/cardview_light_background"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/roxo_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/aghatrix_contato" />
+
+                    <TextView
+                        android:id="@+id/homeFragment4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="Contato"
+                        android:textColor="@color/cor_clara_branca"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+            <TextView
+                android:id="@+id/textCompartilhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:text="Divulgue nosso APP"
+                android:textColor="@color/roxo_background"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/cardVideos" />
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/cardCompartilhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/textCompartilhe"
+                app:neumorph_backgroundColor="@color/roxo_background"
+                app:neumorph_shadowColorDark="@color/cardview_dark_background"
+                app:neumorph_shadowColorLight="@color/cardview_light_background"
+                app:neumorph_shadowElevation="@dimen/_5sdp"
+                app:neumorph_shapeAppearance="@style/NeumorphismCard">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imageCompartilhar"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/aghatrix_compartilhar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/cardRigth"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        app:neumorph_backgroundColor="@color/roxo_background"
+                        app:neumorph_shadowColorDark="@color/cor_primaria_roxo_medio"
+                        app:neumorph_shadowColorLight="@color/cor_terceira_roxo_escuro"
+                        app:neumorph_shadowElevation="@dimen/_3sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:neumorph_shapeType="basin">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:src="@drawable/baseline_arrow_forward_ios_24"
+                            android:tint="@color/cor_clara_branca" />
+
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.5"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Compartilhe com um amigo"
+                        android:textColor="@color/cor_clara_branca"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/guideline"
+                        app:layout_constraintEnd_toStartOf="@id/cardRigth"
+                        app:layout_constraintStart_toEndOf="@id/imageCompartilhar"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="Eles podem querer aprender Libras também!"
+                        android:textColor="@color/cor_clara_branca"
+                        android:textSize="@dimen/_13ssp"
+                        app:layout_constraintEnd_toStartOf="@id/cardRigth"
+                        app:layout_constraintStart_toEndOf="@id/imageCompartilhar"
+                        app:layout_constraintTop_toBottomOf="@id/guideline"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

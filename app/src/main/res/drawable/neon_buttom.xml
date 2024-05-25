@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#000000" /> <!-- Cor de fundo do botão -->
+    <corners android:radius="8dp" /> <!-- Raio dos cantos do botão -->
+    <padding
+        android:left="16dp"
+        android:top="8dp"
+        android:right="16dp"
+        android:bottom="8dp" /> <!-- Espaçamento interno do botão -->
+
+    <!-- Gradiente de cores para o efeito neon -->
+    <gradient
+        android:centerColor="@color/roxo_background"
+        android:endColor="@color/roxo_background"
+        android:startColor="@color/cor_terceira_roxo_escuro"
+        android:type="linear" />
+
+    <!-- Adiciona o efeito de resplandecer nas bordas -->
+    <item>
+        <shape>
+            <solid android:color="@color/cor_secundaria_roxo_medio_claro" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</shape>

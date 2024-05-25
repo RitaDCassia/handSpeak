@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/result_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="quiz.ResultFragment"
+    android:background="@drawable/background_result"
+    android:gravity="center"
+    android:paddingHorizontal="30dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Você é demais!"
+        android:textAlignment="center"
+        android:textColor="@color/cor_clara_branca"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aghatrix_result_fragment"
+        />
+
+    <TextView
+        android:id="@+id/congratulationsTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Parabens!"
+        android:textAlignment="center"
+        android:textColor="@color/cor_clara_branca"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/scoreTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Você acertou 0 de 0"
+        android:textAlignment="center"
+        android:textColor="@color/cor_clara_branca"
+        android:textSize="20sp"
+        android:paddingVertical="16dp"
+        />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/cor_clara_branca"
+        android:textColor="@color/roxo_background"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>

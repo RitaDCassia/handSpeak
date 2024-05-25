@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--cores customisadas-->
+    <color name="cor_primaria_roxo_medio">#9D45D2</color>
+    <color name="cor_secundaria_roxo_medio_claro">#AD3ECD</color>
+    <color name="cor_terceira_roxo_escuro">#4B2768</color>
+    <color name="cor_clara_branca">#ECF9FC</color>
+    <color name="cor_azul">#5790B9</color>
+    <color name="cor_preto">#000000</color>
+    <color name="roxo_background">#0E0115</color>
+</resources>
